@@ -1,5 +1,5 @@
 ![PHA4GE logo](phage-logo-thin.png)
-### Wastewater Surveillance Guidance and Resources
+# Wastewater Surveillance Guidance and Resources
 
 Overview
 ========
