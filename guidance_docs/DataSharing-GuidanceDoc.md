@@ -24,7 +24,7 @@ However, we note that for many public health purposes, especially when consideri
 **Metadata/Contextual data:**   
 To ensure that wastewater data is re-usable and interpretable by others, we provide recommendations on the inclusion of basic attributes associated with the sample. These include information on the contributing catchment (e.g., population size, location), sample collection approach (e.g. grab, passive, composite), laboratory methods (e.g., sequencing platform), and other virus quantification (e.g., concentration of pathogen and fecal indicator for normalization).
 
-PHA4GE has developed a list of essential and optional contextual data fields for wastewater genomic surveillance([https://github.com/cidgoh/Wastewater\_Contextual\_Data\_Specification](https://github.com/cidgoh/Wastewater_Contextual_Data_Specification)). This resource provides extensive discussion on the relevance of contextual data and its role in ensuring the utility of data for later analyses. 
+PHA4GE has developed a list of essential and optional contextual data fields for wastewater genomic surveillance([PHA4GE Wastewater Contextual Data Specification](https://github.com/pha4ge/Wastewater_Contextual_Data_Specification)). This resource provides extensive discussion on the relevance of contextual data and its role in ensuring the utility of data for later analyses. 
 
 **Dissemination and communication**  
 While sharing of raw data is key to ensuring transparent and collaborative public health surveillance, perhaps the most important type of data sharing is sharing of results with stakeholders and the general public. One of the most effective ways to do this is to build a web dashboard that provides distilled data and visualizations. 
@@ -32,18 +32,16 @@ While sharing of raw data is key to ensuring transparent and collaborative publi
 Depending on your needs, findings and visualizations can be inserted modularly into a web-page or as part of entirely separate dashboards. Although a number of approaches are used for dashboard development, two of the easiest and most flexible platforms are provided by the R Shiny and plotly dash packages. Both R Shiny and plotly dash are well documented, enable dashboard design directly in R/Python, and are easy to test and deploy without previous web programming experience. We provide a few example Dash based dashboards:
 
 - NICD South African National Wastewater Dashboard: [https://wastewater.nicd.ac.za/](https://wastewater.nicd.ac.za/)  
-- SEARCH Wastewater Dashboard:[searchcovid.info/dashboards/wastewater-surveillance/](https://searchcovid.info/dashboards/wastewater-surveillance/)  
+- SEARCH Wastewater Dashboard:[https://searchcovid.info/dashboards/wastewater-surveillance/](https://searchcovid.info/dashboards/wastewater-surveillance/)  
 - Austrian Wastewater Dashboard: [https://wavesdashboard.azurewebsites.net/](https://wavesdashboard.azurewebsites.net/)
 
 As well as example R Shiny based dashboards:
 
+- New York State Wastewater Surveillance Network: [https://nywastewatcher.io/](https://nywastewatcher.io/)
 - Dhaka Wastewater Surveillance: [https://dhakaesforsars-cov-2.research.virginia.edu/](https://dhakaesforsars-cov-2.research.virginia.edu/)
-
-New York State Wastewater Surveillance Network: [https://nywastewatcher.io/](https://nywastewatcher.io/)
 
 Other commonly used dashboard development tools are PowerBI, Tableau, and ArcGIS, which tend to be primarily used for simple visualizations, such as longitudinal measurement of wastewater viral loads. While easy to develop, well-suited to geographic data, and requiring even less programming experience, these options offer far less flexibility in terms of the design and complexity of the analyses that can be shown on the dashboard. Example wastewater dashboards using these platforms include:
 
-- Minnesota Wastewater Surveillance(ArcGIS): [https://www.arcgis.com/apps/dashboards/fd0350c812334c5f9733ca5b6186db0d](https://www.arcgis.com/apps/dashboards/fd0350c812334c5f9733ca5b6186db0d)  
 - Chicago Department of Public Health Wastewater Surveilllance (PowerBI): [https://www.chicago.gov/city/en/sites/covid-19/home/covid-19-wastewater-surveillance.html](https://www.chicago.gov/city/en/sites/covid-19/home/covid-19-wastewater-surveillance.html)  
-- Oregon Respiratory Viral Pathogen Wastewater Monitoring Dashboard (Tableau): https://public.tableau.com/app/profile/oregon.public.health.division.acute.and.communicable.disease.pre/viz/OregonsRVPWastewaterMonitoring/Mainpage
-
+- Oregon Respiratory Viral Pathogen Wastewater Monitoring Dashboard (Tableau): [https://public.tableau.com/app/profile/oregon.public.health.division.acute.and.communicable.disease.pre/viz/OregonsRVPWastewaterMonitoring/Mainpage](https://public.tableau.com/app/profile/oregon.public.health.division.acute.and.communicable.disease.pre/viz/OregonsRVPWastewaterMonitoring/Mainpage)
+- Minnesota Wastewater Surveillance(ArcGIS, original - discontinued): [https://www.arcgis.com/apps/dashboards/fd0350c812334c5f9733ca5b6186db0d](https://www.arcgis.com/apps/dashboards/fd0350c812334c5f9733ca5b6186db0d)  
