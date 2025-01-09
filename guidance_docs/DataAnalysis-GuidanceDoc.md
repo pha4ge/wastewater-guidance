@@ -84,8 +84,9 @@ A handful of methods are used for the inference of lineage prevalence from waste
 **Detection of novel haplotypes**  
 Physical linkage of mutations can be used to detect novel or rare haplotypes. Two methods are currently available for doing this: 
 
-1. [Crykey](https://www.nature.com/articles/s41467-024-48334-w) screens for rare linked mutations using a static database of observed SARS-CoV-2 genomes, allowing for detection of previously unobserved genomic variation[(Liu et al. 2024\)](https://doi.org/10.1038/s41467-024-48334-w).   
+1. [SAM_Refiner](https://github.com/degregory/SAM_Refiner) collects information on linked mutations from a set of aligned reads, and removes chimeric sequences to improve the accuracy of variant calling.[(Gregory, DA et al. 2021\)](https://doi.org/10.3390/v13081647)
 2. [Freyja’s covariants function](https://andersen-lab.github.io/Freyja/src/usage/covariants.html) parses aligned sequencing reads for physically linked mutations, which can be queried against large public databases of clinical sequencing data, such as [via Outbreak.info](https://outbreak-info.github.io/python-outbreak-info/cryptic_vars.html), to enable the detection of potential cryptic circulation of viral lineages in wastewater.[(Gangavarapu et al. 2023\)](https://doi.org/10.1038/s41592-023-01769-3)  
+3. [Crykey](https://www.nature.com/articles/s41467-024-48334-w) screens for rare linked mutations using a static database of observed SARS-CoV-2 genomes, allowing for detection of previously unobserved genomic variation[(Liu et al. 2024\)](https://doi.org/10.1038/s41467-024-48334-w).  
    
 
 **Metagenomic Sequencing Methods**  
