@@ -1,5 +1,3 @@
-### Case studies for deployment of wastewater surveillance
-
 **Case Study \#1 \- “[Wastewater sequencing reveals early cryptic SARS-CoV-2 variant transmission](https://www.nature.com/articles/s41586-022-05049-6)”**
 
 The aim of the study was to identify community spread of SARS-CoV-2 on a university campus, as well as broader San Diego county using wastewater sequencing, and to develop the laboratory and computational methods needed to track virus evolution and spread. 

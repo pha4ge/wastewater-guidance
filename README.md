@@ -15,10 +15,10 @@ As the wastewater surveillance field rapidly progresses, it can be difficult to 
 - [Ethics and Legality](guidance_docs/EthicsAndLegality-GuidanceDoc.md)
 
 ## Case Studies
-- [Case Study 1](guidance_docs/CaseStudy1-GuidanceDoc.md)
-- [Case Study 2](guidance_docs/CaseStudy2-GuidanceDoc.md)
-- [Case Study 3](guidance_docs/CaseStudy3-GuidanceDoc.md)
-- [Case Study 4](guidance_docs/CaseStudy4-GuidanceDoc.md)
+- [Case Study 1](guidance_docs/CaseStudy1-GuidanceDoc.md) - SARS-CoV-2 wastewater seqeuencing and analysis in San Diego, USA
+- [Case Study 2](guidance_docs/CaseStudy2-GuidanceDoc.md) - _S. typhi_ environmental surveillance in Blantyre, Malawi
+- [Case Study 3](guidance_docs/CaseStudy3-GuidanceDoc.md) - Mpox wastewater detection and quantification across Spain
+- [Case Study 4](guidance_docs/CaseStudy4-GuidanceDoc.md) - Surveillance of multiple respiratory pathogens (including SARS-CoV-2 and Influenza A) in Bengaluru, India 
 
 Contributing
 ============
