@@ -96,26 +96,6 @@ Integration of wastewater surveillance with concurrent epidemiologic and genomic
 
 Combining wastewater surveillance data with other surveillance programs can also help identify hotspots for a particular pathogen, and detect ongoing transmission in locations where clinical cases have not been identified. This was seen during the worldwide Mpox outbreak in 2022, whereby wastewater monitoring assisted epidemiologists in estimating the case burden of Mpox. Solely relying on clinical reporting resulted in underestimations of case counts due to reluctance to seek treatment by infected individuals, and over-estimations of disease severity by only counting those ill enough to seek treatment. 
 
-### Surveillance strategies in practice: case studies
-
-**Case Study \#1 \- “[Spanish wastewater reveals the current spread of Monkeypox virus](https://www.sciencedirect.com/science/article/pii/S0043135423000568)”**
-
-The aim of the study was to trace the community circulation of the MPXV from potentially symptomatic, asymptomatic, or presymptomatic individuals using the previous established Spanish National SARS-CoV-2 Wastewater Surveillance Network (VATar COVID-19).
-
-* **Sampling location**: 20 sampling locations throughout Spain  
-* **Sampling site**: sewage (untreated wastewater) from wastewater treatment plants  
-* **Sampling frequency**: weekly sample collection from 20 sites  
-* **Sample collection method:** active; grab sampling  
-* **Integration with ongoing surveillance efforts:** through comparison of wastewater data and data from the National Epidemiological Surveillance Netwrok (RENACE) in Spain, the authors determined that reported clinical cases were underestimated and asymptomatic infections may be more frequent than expected.
-
-**Case Study \#2 \- “[Wastewater sequencing reveals early cryptic SARS-CoV-2 variant transmission](https://www.google.com/url?q=https://www.nature.com/articles/s41586-022-05049-6&sa=D&source=docs&ust=1725551664579840&usg=AOvVaw1sstzzKUUerJ3fkRHmZS2k)”**
-
-* **Sampling location:** San Diego (University of California San Diego campus, greater San Diego area)  
-* **Sampling site**: For on campus samples, sewage from manholes or sewer cleanouts; for greater San Diego area, Point Loma wastewater treatment plant  
-* **Sampling frequency**: For on-campus residential buildings, once daily from 2020-11-23 to 2021-11-20; for on-campus non-residential buildings, once every Monday-Friday from 2020-11-23 to 2021-11-20; for great San Diego area, three times a week from 2021-02-24 to 2022-02-07  
-* **Sample collection method:** Passive sampling using autosamplers collecting 24-hour time-weighted composites  
-* **How data will be used:** Comparison of lineage prevalence in wastewater to those in clinical samples, determining that wastewater can detect emerging variants of concern up to two weeks earlier
-
 ### Available resources for designing a wastewater surveillance strategy:
 
 * CDC \- Developing a Wastewater Surveillance Sampling Strategy [https://www.cdc.gov/nwss/sampling.html](https://www.cdc.gov/nwss/sampling.html)  
