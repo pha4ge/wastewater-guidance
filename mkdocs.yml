@@ -8,7 +8,7 @@ edit_uri: edit/main/
 
 theme:
   name: material
-  logo: pha4ge-logo-thin.png
+  logo: ../pha4ge-logo-thin.png
   palette:
     - scheme: default
       primary: indigo
@@ -42,10 +42,10 @@ markdown_extensions:
 nav:
   - Home: README.md
   - Guidance:
-      - Surveillance Strategies: surveillance-strategies.md
-      - Data Analysis: data-analysis.md
-      - Data Sharing: data-sharing.md
-      - Ethics & Legality: ethics-and-legality.md
+      - Surveillance Strategies: SurveillanceStrategies-GuidanceDoc.md
+      - Data Analysis: DataAnalysis-GuidanceDoc.md
+      - Data Sharing: DataSharing-GuidanceDoc.md
+      - Ethics & Legality: EthicsAndLegality-GuidanceDoc.md
   - Case Studies:
       - San Diego SARS-CoV-2: CaseStudy1-GuidanceDoc.md
       - Blantyre Typhoid: CaseStudy2-GuidanceDoc.md
