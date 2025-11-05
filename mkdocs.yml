@@ -3,7 +3,7 @@ site_name: "PHA4GE Wastewater Surveillance Guidance"
 site_description: "Open-access methods, case studies, and best practices for wastewater and environmental surveillance"
 site_author: "PHA4GE Wastewater Surveillance Working Group"
 repo_url: https://github.com/pha4ge/wastewater-guidance
-docs_dir: 
+docs_dir: guidance_docs/
 edit_uri: edit/main/
 
 theme:
