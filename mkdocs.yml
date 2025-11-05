@@ -1,0 +1,53 @@
+
+site_name: "PHA4GE Wastewater Surveillance Guidance"
+site_description: "Open-access methods, case studies, and best practices for wastewater and environmental surveillance"
+site_author: "PHA4GE Wastewater Surveillance Working Group"
+repo_url: https://github.com/pha4ge/wastewater-guidance
+edit_uri: edit/main/guidance_docs/
+
+theme:
+  name: material
+  logo: guidance_docs/images/pha4ge-logo.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: teal
+    - scheme: slate
+      primary: indigo
+      accent: teal
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - tables
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Home: README.md
+  - Guidance:
+      - Surveillance Strategies: guidance_docs/surveillance-strategies.md
+      - Data Analysis: guidance_docs/data-analysis.md
+      - Data Sharing: guidance_docs/data-sharing.md
+      - Ethics & Legality: guidance_docs/ethics-and-legality.md
+  - Case Studies:
+      - San Diego SARS-CoV-2: guidance_docs/CaseStudy1-GuidanceDoc.md
+      - Blantyre Typhoid: guidance_docs/CaseStudy2-GuidanceDoc.md
+      - Spain Mpox: guidance_docs/CaseStudy3-GuidanceDoc.md
+      - Bengaluru Multi-pathogen: guidance_docs/CaseStudy4-GuidanceDoc.md
+  # - Contributing: guidance_docs/contributing.md
