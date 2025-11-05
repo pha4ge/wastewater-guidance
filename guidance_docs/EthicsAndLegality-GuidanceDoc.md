@@ -1,3 +1,4 @@
+![PHA4GE logo](../phage-logo-thin.png)
 ## **Ethics and legality of wastewater pathogen surveillance**
 
 The legal concept of wastewater, while exhibiting variations in its precise definitional parameters and wording across jurisdictions, demonstrates remarkable consistency across regulatory frameworks in environmental and public health statutory instruments. The contemporary legal definitions encompass "water that has been adversely affected in quality by anthropogenic influence," a formulation that necessarily encompasses domestic sewage originating from residential and institutional sources, industrial effluent discharged through commercial operations, urban stormwater runoff precipitated by meteorological events, and, within certain regulatory contexts, specialized waste streams including sludge and greywater systems.
