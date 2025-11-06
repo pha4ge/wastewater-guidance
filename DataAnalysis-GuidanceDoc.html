@@ -1,0 +1,886 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Open-access methods, case studies, and best practices for wastewater and environmental surveillance">
+      
+      
+        <meta name="author" content="PHA4GE Wastewater Surveillance Working Group">
+      
+      
+        <link rel="canonical" href="https://pha4ge.github.io/wastewater-guidance/DataAnalysis-GuidanceDoc.html">
+      
+      
+        <link rel="prev" href="SurveillanceStrategies-GuidanceDoc.html">
+      
+      
+        <link rel="next" href="DataSharing-GuidanceDoc.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Data Analysis - PHA4GE Wastewater Surveillance Guidance</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-document-wastewater-surveillance-data-analysis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="PHA4GE Wastewater Surveillance Guidance" class="md-header__button md-logo" aria-label="PHA4GE Wastewater Surveillance Guidance" data-md-component="logo">
+      
+  <img src="images/phage-logo-thin.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PHA4GE Wastewater Surveillance Guidance
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data Analysis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pha4ge/wastewater-guidance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="SurveillanceStrategies-GuidanceDoc.html" class="md-tabs__link">
+          
+  
+  
+  Guidance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="CaseStudy1-GuidanceDoc.html" class="md-tabs__link">
+          
+  
+  
+  Case Studies
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="PHA4GE Wastewater Surveillance Guidance" class="md-nav__button md-logo" aria-label="PHA4GE Wastewater Surveillance Guidance" data-md-component="logo">
+      
+  <img src="images/phage-logo-thin.png" alt="logo">
+
+    </a>
+    PHA4GE Wastewater Surveillance Guidance
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pha4ge/wastewater-guidance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guidance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guidance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SurveillanceStrategies-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surveillance Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Data Analysis
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="DataAnalysis-GuidanceDoc.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Analysis
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guidance-document-wastewater-surveillance-data-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidance Document - Wastewater Surveillance Data Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guidance Document - Wastewater Surveillance Data Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#containerization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Containerization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DataSharing-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EthicsAndLegality-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethics & Legality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Case Studies
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Case Studies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy1-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    San Diego SARS-CoV-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy2-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blantyre Typhoid
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy3-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spain Mpox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy4-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bengaluru Multi-pathogen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Data Analysis</h1>
+
+<h2 id="guidance-document-wastewater-surveillance-data-analysis"><strong>Guidance Document - Wastewater Surveillance Data Analysis</strong><a class="headerlink" href="#guidance-document-wastewater-surveillance-data-analysis" title="Permanent link">&para;</a></h2>
+<p>Working with wastewater pathogen concentration measurement and sequencing data can be challenging, but community resources are available for researchers with all levels of bioinformatics and data analysis experience. The following guidance document is primarily geared towards targeted (often capture probe or amplicon-based) sequencing of pathogens in wastewater, though we provide guidance for metagenomic analyses as well. </p>
+<p>To get started with analyzing your data, it may be helpful to first determine your level of experience and preferred computing environment. That is, if you are: </p>
+<ol>
+<li>Using existing bioinformatics pipelines (with command line experience)  </li>
+<li>Using existing bioinformatics pipelines (for non-bioinformaticians)  </li>
+<li>Doing custom pipeline development using existing tools  </li>
+<li>Doing custom tool development for wastewater-based analyses</li>
+</ol>
+<p>In this document we provide the necessary references and resources to get up and running while adhering to the current best practices for wastewater surveillance. </p>
+<p><strong>Using Community-supported Bioinformatics Pipelines (Scenario 1 and 2)</strong><br />
+Many widely used workflows are already publicly available and standardized for use by the broader public health research community, for bioinformatics experts and non-bioinformaticians alike. </p>
+<p><strong>Using existing community bioinformatics pipelines (Scenario 1)</strong><br />
+If you are comfortable running your own pipelines using tools such as Nextflow, snakemake, and/or bash, we recommend considering the following widely used approaches. </p>
+<p><strong>Official Public Health Institute tools</strong><br />
+The following are workflows developed and employed by leading government agencies performing wastewater genomic surveillance, including US CDC. </p>
+<ul>
+<li><a href="https://github.com/CDCgov/aquascope">Aquascope</a> is a “ bioinformatics best-practice pipeline for early detection of SARS-CoV-2 variants of concern, sequenced through shotgun metagenomic sequencing, from wastewater”, developed by the US CDC. The package does all necessary read alignment and trimming, quality control, and provides lineage prevalence estimates using Freyja. Aquascope supersedes the now deprecated C-WAP project. </li>
+</ul>
+<p><strong>STaPH-B Bioinformatic Toolkit</strong><br />
+The state public health bioinformatics (STaPH-B) consortium is dedicated to providing easy access to open-source bioinformatic software, without the need for local management and installation of package dependencies. </p>
+<ul>
+<li><a href="https://github.com/UPHL-BioNGS/Cecret">Cecret</a>  is an end-to-end workflow that can be customized to handle both clinical and wastewater SARS-CoV-2 sequencing data, originally developed by Erin Young (Utah PHL). Cecret accepts fastq inputs, performs alignment, trimming, consensus calling (not recommended in general for wastewater samples) and lineage prevalence inference with Freyja. Cecret is easily installed via the <a href="https://staphb.org/staphb_toolkit/">staph-b toolkit</a>, which provides a docker container that can be used to run the Nextflow pipeline.</li>
+</ul>
+<p><strong>Nf-core</strong><br />
+Nf-core (<a href="https://nf-co.re/">https://nf-co.re/</a>)  is a collection of community maintained bioinformatics pipelines developed using the Nextflow workflow language. Nextflow provides seamless integration with Docker, Singularity, Conda and other container solutions, allowing pipelines to be deployed to a variety of computational settings and maintain reproducible results. </p>
+<ol>
+<li><a href="https://github.com/nf-core/viralrecon">nf-core/viralrecon</a> is used for viral metagenomic sequencing to perform genome assembly and intrahost variant calling. The pipeline supports both Illumina and Nanopore sequencing data, typically obtained from shotgun sequencing (e.g. directly from clinical samples) or enrichment-based library preparation methods (e.g. amplicon-based: ARTIC SARS-CoV-2 enrichment protocol; or probe-capture-based).. For Nanopore data the pipeline only supports amplicon-based analysis obtained from primer sets created and maintained by the ARTIC Network. Certain steps (e.g. host read filtering, primer trimming) can be omitted, allowing the workflow to generalize well to different experimental approaches. Relevant to wastewater sequencing, viralrecon supports downstream analysis with Freyja.  </li>
+<li><a href="https://nf-co.re/mag/3.0.2/">nf-core/mag</a> can be used to visualize the relative abundance of organisms in complex samples. It can use only short reads or a mixture of short and long reads to perform hybrid assembly.  </li>
+<li><a href="https://nf-co.re/funcscan/1.1.6/">nf-core/funcscan</a>  is a bioinformatics analysis pipeline which currently features mining for antimicrobial peptides, antibiotic resistance genes and biosynthetic gene clusters. It performs the screening of contigs for antibiotic resistant gene-like sequences with ABRicate, AMRFinderPlus, fARGene, RGI, DeepARG.  </li>
+<li><a href="https://github.com/nf-core/taxprofiler">nf-core/taxprofiler</a> is a bioinformatics best-practice analysis pipeline for taxonomic classification and profiling of shotgun short- and long-read metagenomic data. It allows for in-parallel taxonomic identification of reads or taxonomic abundance estimation with multiple classification and profiling tools against multiple databases, and produces standardised output tables for facilitating results comparison between different tools and databases.  </li>
+</ol>
+<p>For more information on the specific tools being used within these pipelines, we recommend you check out the <strong>Gold-Standard Methods for Wastewater Genomic Surveillance</strong> section. </p>
+<p><strong>Resources for non-bioinformaticians (Scenario 2)</strong><br />
+If you are not interested in running your own analyses via the command line, you can still do the same analyses via drag and drop style web platforms. There are two commonly used platforms, Terra and Galaxy, each with their own advantages and disadvantages. </p>
+<ol>
+<li><a href="https://usegalaxy.org/">Galaxy</a> is an “open source, web-based platform for data intensive biomedical research”. Galaxy is entirely free to use and allows users to choose from a curated list of workflows, but jobs may queue for extended periods, and workflows are broken into individual steps.   </li>
+<li>Quality control:   </li>
+<li>The US FDA has prepared an open source <a href="https://www.protocols.io/view/wastewater-qc-workflow-in-galaxytrakr-ssquawk4-kxygxzk5dv8j/v9?step=6.2">Wastewater QC workflow in GalaxyTrakr (SSQuAWK4)</a>, available via protocols.io.   </li>
+<li>For more general quality control, we recommend <a href="https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">this tutorial</a> from Batut et al. which provides step by step instructions and tips.   </li>
+<li>Read alignment and trimming: A handful of tutorials exist for doing alignment and trimming in Galaxy. We recommend considering <a href="https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html">this one</a> from Wolfgang Meier and Bérénice Batut.   </li>
+<li>Lineage Prevalence Inference:   </li>
+<li>
+<p>Freyja’s core variant calling (<a href="https://toolshed.g2.bx.psu.edu/repository/display_tool?repository_id=b19ef9d65efded99&amp;tool_config=%2Fsrv%2Ftoolshed-repos%2Fmain%2F006%2Frepo_6312%2Ffreyja_variants.xml&amp;changeset_revision=08c2d81e7942&amp;render_repository_actions_for=tool_shed">variants</a>) and deconvolution (<a href="https://toolshed.g2.bx.psu.edu/repository/display_tool?repository_id=931612620d3e0257&amp;tool_config=%2Fsrv%2Ftoolshed-repos%2Fmain%2F006%2Frepo_6311%2Ffreyja_demix.xml&amp;changeset_revision=c0a0e79d7196">demix</a>) functions are available directly through Galaxy. </p>
+</li>
+<li>
+<p><a href="https://terra.bio/">Terra</a>: Terra is a cloud computing platform that uses configurable workflow development language (WDL) workflows to perform end-to-end bioinformatic analyses. Workflows for use in Terra can be obtained freely via Dockstore, and is free to use for individuals, but cloud computing is performed via google cloud and can incur costs.  </p>
+</li>
+<li><a href="https://dockstore.org/workflows/github.com/theiagen/public_health_bioinformatics/Freyja_FASTQ_PHB:main?tab=info">Freyja_FASTQ</a>: End to end pipeline to perform lineage prevalence estimation for SARS-CoV-2.  </li>
+<li><a href="https://dockstore.org/workflows/github.com/theiagen/public_health_bioinformatics/Freyja_Plot_PHB:main?tab=info">Freyja_Plot</a>: Plots outputs from Freyja FASTQ/demix</li>
+</ol>
+<p><strong>Custom pipeline development using existing tools (Scenario 3)</strong><br />
+If you are building your own pipeline based on current state of the art tools, we recommend doing so with common pipeline tools such as Nextflow and snakemake. Both Nextflow and snakemake contain standalone modules,  which can be used to execute individual processing steps. For Nextflow, <a href="https://nf-co.re/modules/">nf-core/modules</a> contains a large collection of standalone modules (i.e. workflow steps) used in other publicly available nf-core pipelines. This resource can serve as a useful starting point for building custom analysis pipelines tailored to your specific needs.</p>
+<p><strong>Gold-Standard Methods for Wastewater Genomic Surveillance</strong><br />
+Depending on the sequencing approach used, researchers and practitioners should select the appropriate data processing and analyses to characterize their samples. The following are our recommended practices for analyses of targeted (e.g., amplicon-based sequencing) and non-targeted sequencing data (e.g. shotgun metagenomic sequencing). </p>
+<p><strong>Data Pre-Processing Guidelines</strong><br />
+Quality Assessment and Control: Since the quality of raw sequencing data is extremely important in downstream wastewater sequencing data analyses, we strongly recommend evaluating read quality before performing any analyses. Read quality assessment should be performed regardless of the sample type, with a particular focus on mean per base quality score across reads, mean and standard deviation of the read length. For SARS-CoV-2, PHA4GE has provided some basic quality <a href="https://pha4ge.org/resource/qc-solutions-for-sars-cov-2-genomic-analysis/">guidelines</a> for sequencing data, which can be calculated using tools including FastQC and samtools. We note however that these QC parameters may not be appropriate for all sequencing platforms, samples, and pathogens, especially when considering pathogens like bacteria with large genomes.</p>
+<ul>
+<li>Read quality assessment: <br />
+  FastQC can be used to measure the quality of the sequencing reads with both CLI and GUI options through Conda and Galaxy. You may find examples of good and bad quality reports for Illumina reads <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">here</a>.  </li>
+<li>PCR primer, sequencing adapter trimming:<br />
+  Once the read quality is assessed, users should make sure to trim PCR primers and sequencing adapters with lower quality since these sequences have higher error rates. For trimming primers, tools such as iVar can be used by simply providing a primer bed file. It is available both through Conda and Galaxy and more information on iVar can be found <a href="https://andersen-lab.github.io/ivar/html/manualpage.html">here</a>. To remove sequencing adapters and remove the contaminations, Bbduk can be used.  It is available both on Conda and Galaxy, for more information read <a href="https://jgi.doe.gov/data-and-tools/software-tools/bbtools/bb-tools-user-guide/bbduk-guide/">this</a>.   </li>
+<li>Implications and approaches needed for lower quality/higher error rate data</li>
+</ul>
+<p><strong>Lineage Prevalence Inference Methods</strong><br />
+A handful of methods are used for the inference of lineage prevalence from wastewater sequencing data. Of these, Freyja is field standard and is the most widely used. We provide a description of each of the most commonly employed approaches in the field here, along with links to relevant papers and package repositories. To examine the differences between these methods we recommend considering (<a href="https://doi.org/10.1099/mgen.0.001249">Sutcliffe et al. 2024</a>; <a href="https://doi.org/10.1016/j.scitotenv.2024.174515">Ferdous et al. 2024</a>; <a href="https://doi.org/10.7717/peerj.14596">Kayikcioglu et al. 2023</a>). </p>
+<ul>
+<li>Viral lineage quantification(VLQ)<a href="https://doi.org/10.1101/2021.08.31.21262938">(Baaijens et al. 2021)</a>: A RNA transcript quantification method leveraging multi-lineage references using Kallisto transcript abundance quantification program. More information found in the <a href="https://link.springer.com/article/10.1186/s13059-022-02805-9">publication</a> and the GitHub <a href="https://github.com/baymlab/wastewater_analysis">repository</a>, and a nextflow pipeline for VLQ is available <a href="https://github.com/rki-mf1/vlq-nf">here</a>.  </li>
+<li>Freyja<a href="https://www.nature.com/articles/s41586-022-05049-6">(Karthikeyan et al. 2022)</a>: A depth-weighted demixing method used to quantify lineage abundance in wastewater samples. Used in most standard wastewater analysis pipelines, including Aquascope and Cecret. More information can be found in the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8996633/">publication</a> and the GitHub <a href="https://github.com/andersen-lab/Freyja">repository</a> and associated <a href="https://andersen-lab.github.io/Freyja/index.html#">documentation</a>.    </li>
+<li>V-pipe/lollipop: A Kernel-based deconvolution method taking time series nature of samples into account. More information can be found in the <a href="https://www.medrxiv.org/content/10.1101/2022.11.02.22281825v1">publication</a> and the GitHub <a href="https://github.com/cbg-ethz/LolliPop">repository</a>.  </li>
+<li>Other methods including Alcov, Gromstole, Lineagespot, and LCS may also present some advantages, but are not in widespread use. </li>
+</ul>
+<p><strong>Detection of novel haplotypes</strong><br />
+Physical linkage of mutations can be used to detect novel or rare haplotypes. Two methods are currently available for doing this: </p>
+<ol>
+<li><a href="https://github.com/degregory/SAM_Refiner">SAM_Refiner</a> collects information on linked mutations from a set of aligned reads, and removes chimeric sequences to improve the accuracy of variant calling.<a href="https://doi.org/10.3390/v13081647">(Gregory, DA et al. 2021)</a></li>
+<li><a href="https://andersen-lab.github.io/Freyja/src/usage/covariants.html">Freyja’s covariants function</a> parses aligned sequencing reads for physically linked mutations, which can be queried against large public databases of clinical sequencing data, such as <a href="https://outbreak-info.github.io/python-outbreak-info/cryptic_vars.html">via Outbreak.info</a>, to enable the detection of potential cryptic circulation of viral lineages in wastewater.<a href="https://doi.org/10.1038/s41592-023-01769-3">(Gangavarapu et al. 2023)</a>  </li>
+<li><a href="https://www.nature.com/articles/s41467-024-48334-w">Crykey</a> screens for rare linked mutations using a static database of observed SARS-CoV-2 genomes, allowing for detection of previously unobserved genomic variation<a href="https://doi.org/10.1038/s41467-024-48334-w">(Liu et al. 2024)</a>.  </li>
+</ol>
+<p><strong>Metagenomic Sequencing Methods</strong><br />
+Although metagenomic sequencing of wastewater has great potential for unbiased surveillance of diverse pathogens, wet-lab pathogen concentration protocols are not yet capable in general of obtaining significant read depth and coverage for many pathogens. In many cases, the vast majority of reads are associated with host and enteric bacterial reads, which are of minimal use for pathogen surveillance. However, some recent studies using virome hybridization capture panels have suggested that this sort of metagenomic surveillance may be possible. When working with this data, or other metagenomic wastewater sequencing data, we recommend the following tools: </p>
+<ul>
+<li>Kraken: Kraken is a widely used k-mer based match taxonomic classification tool that is used to classify reads to the most specific possible taxonomic label (genus,species, etc.), using the lowest common ancestor (LCA). <a href="https://doi.org/10.1186/s13059-019-1891-0">(Wood, Lu, and Langmead 2019)</a>  </li>
+<li>Bracken: Bayesian Reestimation of Abundance after Classification with KrakEN, or Bracken, is used as a post-processing step after Kraken that leverages the small numbers of reads that may be able to distinguish between species present in a sample, even if the vast majority of multiple species’ genomes are identical.<a href="https://doi.org/10.7717/peerj-cs.104">(Lu et al. 2017)</a>  </li>
+<li>Sourmash: This tool is used for a variety of metagenomic analyses purposes such as identification of the reference genome for read mapping, sequence querying and taxonomic classification of reads.  </li>
+<li>Targeting of specific genes of interest  </li>
+<li>AMR markers: There is a continuous effort to develop methods for detection of antibiotic resistance through wastewater sequencing. For example, Mycobacterium tuberculosis(MTB) drug resistance markers that have been <a href="https://www.who.int/publications/i/item/9789240082410">catalogued by the World</a> Health Organization and are most commonly detected using <a href="https://github.com/jodyphelan/TBProfiler">tb-profiler</a>. </li>
+</ul>
+<p><strong>Guidelines for researchers developing new tools (Scenario 4)</strong><br />
+Wastewater-based genomic pathogen surveillance, much like clinical genomic surveillance, relies on transparent accounting of the specific information (e.g., metadata, methods, libraries) used while performing an analysis. Enabling consistent and interpretable outcomes for bioinformatics analyses requires the use of standardized resources for sample analyses. <br />
+When building new tools for community use, we recommend that developers adhere to the following standards. These approaches maximize tool usability, transparency, reproducibility, and access across contexts.</p>
+<p><strong>Index/Database Versioning</strong><br />
+Over the course of an outbreak, available information on circulating strains will often change on a daily basis, requiring public health researchers to integrate the most up-to-date sources of data possible. As such, it is important for analyses to be performed using real-time resources that are versioned and/or timestamped. We provide a few examples of this as examples:</p>
+<ol>
+<li>Kraken2, the popular metagenomic read classifier, provides dates and descriptions for each of the reference databases it provides<a href="https://doi.org/10.1186/s13059-019-1891-0">(Wood, Lu, and Langmead 2019)</a>. They are openly available <a href="https://benlangmead.github.io/aws-indexes/k2">here</a>.   </li>
+<li>Freyja maintains a separate <a href="https://github.com/andersen-lab/Freyja-data">Freyja-data</a> repository to store previous barcodes and metadata needed to exactly reproduce results<a href="https://www.nature.com/articles/s41586-022-05049-6">(Karthikeyan et al. 2022)</a>.   </li>
+<li>For lineage classification of virus genomes, PangoUShER is now the preferred approach<a href="https://doi.org/10.1093/ve/vead085">(de Bernardi Schneider et al. 2024)</a>. The method relies on the global phylogenetic tree maintained by UShER, which is dated and publicly available <a href="https://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2/">here</a>.<a href="https://doi.org/10.1093/molbev/msab264">(McBroome et al. 2021)</a></li>
+</ol>
+<h3 id="containerization"><strong>Containerization</strong><a class="headerlink" href="#containerization" title="Permanent link">&para;</a></h3>
+<p>In order to ensure reproducibility and accessibility, wastewater workflows should ideally be containerized using standard container management systems (e.g. Docker, Singularity). Doing so allows for software dependencies to be packaged together with a workflow, ensuring that they can be run reliably regardless of the selected compute platform. </p>
+<p>Further, all containers should be made publicly available via container registries such as Docker Hub or Quay.io to ensure that software can be readily deployable and accessible for all public health researchers. </p>
+<p>As mentioned in the section concerning Index/Database Versioning, it is critical that analyses be performed with the most up-to-date resources possible as more information becomes available during the course of an outbreak. It is therefore advised to regularly build and push the most recent data to public container registries.</p>
+<p><strong>Making tools available for non-bioinformaticians</strong><br />
+As many of the users of analysis packages, especially those used for pathogen surveillance, are not bioinformaticians and may require a click interface to analyze their data, it’s important to consider development options that facilitate this. A few different standards exist, but the most commonly used is Workflow Description Language (WDL). </p>
+<p>We recommend making workflows available to the public via dockstore, which provides a user friendly interface that allows users to directly add the workflow to their computing resource of choice, including Terra and Elwazi. </p>
+<p><strong>Analyses of Wastewater Pathogen Concentration Measurements</strong><br />
+Although wastewater sequencing data has the benefit of providing information on the specific mutations and lineages circulating in the population, estimates of the virus concentration in wastewater are often equally, if not more important to inform public health guidance. Using the appropriate analytical methods ensures proper interpretation of results, and is especially important for wastewater surveillance programs with multiple sites. </p>
+<p><strong>Measurement normalization</strong><br />
+Since wastewater is a complex mixture that may be diluted by other contributing sources, it is important to perform proper normalization to ensure that measurements are comparable across sites and over time. In addition to measuring the concentration of the pathogen, it is important to also measure the concentration of a fecal indicator, with PMMoV or Crassphage being the most robust and highly shed in stool and urine. The resulting measurement is generally unitless, with pathogen concentration divided by indicator concentration. If an amplification control is available, it is often good practice to further scale by the estimated concentration of the amplification control.</p>
+<p>Since even normalized measurements can be difficult to compare across collection sites, we recommend performing statistical normalization of longitudinal samples (i.e. site specific mean-subtraction and variance scaling). However, it is worth noting that this approach requires sampling of the same site with the same collection and wet-lab techniques over an extended period of time, in which viral loads are able to vary over a considerable range. </p>
+<p><strong>Aggregation of samples across sites</strong><br />
+To aggregate samples across sites, the catchment population and viral load are often used as a weighting factor to perform weighted averaging. Using a binning approach, samples can be grouped using the form average \= sum(p*c)/sum(p), where c is generally the catchment population, or the product of the catchment population and normalized (and potentially standardized by site) viral load. </p>
+<p><strong>Smoothing approaches for longitudinal data</strong><br />
+When analyzing sequential measurements, we recommend first considering basic convolutional smoothing filters, with moving average and binomial filters being the most commonly used. These simple smoothers are remarkably efficient, and can explicitly accommodate sample weighting by factors including catchment population. </p>
+<p>Local regression filtering, using methods including Savitzky-Golay or LOESS/LOWESS, can provide more effective smoothing but require more sophisticated implementations, and may be more difficult to interpret. When using these approaches, we recommend using 1st order polynomial approximations, in order to preserve signal norm.   </p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "toc.integrate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

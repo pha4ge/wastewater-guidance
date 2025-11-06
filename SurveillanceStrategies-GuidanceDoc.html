@@ -1,0 +1,885 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Open-access methods, case studies, and best practices for wastewater and environmental surveillance">
+      
+      
+        <meta name="author" content="PHA4GE Wastewater Surveillance Working Group">
+      
+      
+        <link rel="canonical" href="https://pha4ge.github.io/wastewater-guidance/SurveillanceStrategies-GuidanceDoc.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="DataAnalysis-GuidanceDoc.html">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Surveillance Strategies - PHA4GE Wastewater Surveillance Guidance</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guidance-document-surveillance-strategies" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="PHA4GE Wastewater Surveillance Guidance" class="md-header__button md-logo" aria-label="PHA4GE Wastewater Surveillance Guidance" data-md-component="logo">
+      
+  <img src="images/phage-logo-thin.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PHA4GE Wastewater Surveillance Guidance
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Surveillance Strategies
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="teal"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pha4ge/wastewater-guidance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="SurveillanceStrategies-GuidanceDoc.html" class="md-tabs__link">
+          
+  
+  
+  Guidance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="CaseStudy1-GuidanceDoc.html" class="md-tabs__link">
+          
+  
+  
+  Case Studies
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="PHA4GE Wastewater Surveillance Guidance" class="md-nav__button md-logo" aria-label="PHA4GE Wastewater Surveillance Guidance" data-md-component="logo">
+      
+  <img src="images/phage-logo-thin.png" alt="logo">
+
+    </a>
+    PHA4GE Wastewater Surveillance Guidance
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pha4ge/wastewater-guidance" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guidance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guidance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Surveillance Strategies
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="SurveillanceStrategies-GuidanceDoc.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Surveillance Strategies
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guidance-document-surveillance-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guidance Document - Surveillance Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guidance Document - Surveillance Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#considerations-for-designing-a-wastewater-surveillance-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Considerations for designing a wastewater surveillance strategy:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#available-resources-for-designing-a-wastewater-surveillance-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available resources for designing a wastewater surveillance strategy:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DataAnalysis-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Analysis
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DataSharing-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EthicsAndLegality-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethics & Legality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Case Studies
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Case Studies
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy1-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    San Diego SARS-CoV-2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy2-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blantyre Typhoid
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy3-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spain Mpox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CaseStudy4-GuidanceDoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bengaluru Multi-pathogen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Surveillance Strategies</h1>
+
+<h2 id="guidance-document-surveillance-strategies"><strong>Guidance Document - Surveillance Strategies</strong><a class="headerlink" href="#guidance-document-surveillance-strategies" title="Permanent link">&para;</a></h2>
+<p>The ideal strategy for a wastewater surveillance program will depend on the purpose of the program and resource availability. Common use-cases for wastewater surveillance programs in public health include monitoring trends in prevalence of a pathogen over time to estimate the disease burden in a community, identifying rare pathogens to direct mitigation efforts, and establishing “early warning” systems for pathogens of public health concern. Some surveillance strategies may be specific to a certain pathogen, variant, or gene of interest, while others may be pathogen-agnostic or broadly applicable for many purposes. Surveillance strategies can also be modified depending on the availability of resources to carry out the intended purpose, which can be seen in the different approaches to wastewater surveillance programs worldwide.</p>
+<h3 id="considerations-for-designing-a-wastewater-surveillance-strategy">Considerations for designing a wastewater surveillance strategy:<a class="headerlink" href="#considerations-for-designing-a-wastewater-surveillance-strategy" title="Permanent link">&para;</a></h3>
+<p><strong>Sampling location</strong><br />
+The sampling location is the target geographic region for the wastewater surveillance program. When determining the sampling location, there are some key considerations:</p>
+<ol>
+<li><strong>Population of interest</strong><br />
+   Some wastewater surveillance systems target the population of an entire nation. For example, the South African Collaborative COVID-19 Surveillance System (SACCESS) network, established in 2021 for SARS-CoV-2 WBE, demonstrated increasing trends in SARS-CoV-2 concentration on the precipice of successive waves of the pandemic in the population of South Africa (<a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972304442X">Iwu-Jaja et al, 2023</a>). In the United States, the Centers for Disease Control and Prevention established a National Wastewater Surveillance System (NWSS), which monitors SARS-CoV-2 and MPXV in sewersheds representing 47% of the US population (<a href="https://www.sciencedirect.com/science/article/pii/S0048969724017078">Adams et al, 2024</a>).    </li>
+</ol>
+<p>Other wastewater surveillance systems are more narrow in scope, focusing on the population of individual cities, states, or neighborhoods. For example, a collaboration between UK HSA and WHO focused on detection of poliovirus in London, resulting in positive detections in a catchment area of 3 million people and allowing for a more targeted public health intervention (<a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)01804-9/fulltext#%20">Klapsa et al, 2022</a>). Also, a wastewater surveillance program in Louisville, Kentucky, USA successfully monitored city-wide trends in SARS-CoV-2 concentration, as well as the genetic diversity of SARS-CoV-2, which enabled targeted deployment of public health resources (<a href="https://www.mdpi.com/2076-0817/10/10/1271">Rouchka et al, 2021</a>). Narrowing the geographic region often allows for more direct public health action. This can be particularly beneficial in lower-resource settings where funding can be allocated to the specific population in need of intervention.  </p>
+<p>There are also wastewater surveillance systems that target a population living in a specific facility or encampment, or traditionally under-surveilled regions. When setting up a wastewater surveillance system, the locations selected for sampling should reflect this population of interest.</p>
+<ol>
+<li><strong>Representativeness of population</strong><br />
+   Another consideration is whether the sampling location is representative of the population of interest. For example, when setting up a country-wide surveillance system, sampling locations should be distributed throughout the country in order to most appropriately represent the entire population of that country. Similarly, if the target population is a specific city, locations should be as representative of the entire city population as possible. In 2022, the Norwegian Institute of Public Health established a SARS-CoV-2 wastewater pilot study, where they selected wastewater treatment facilities in locations representing the major population centers in the country, Oslo (n=2), Bergen (n=4), Trondheim (n=2), and Tromsø (n=3) (<a href="https://link.springer.com/article/10.1186/s12889-023-16627-2">Amato et al, 2023</a>).</li>
+</ol>
+<p><strong>Sampling site</strong><br />
+The sampling site is where wastewater samples are collected as part of the wastewater surveillance program. When determining the sampling site, there are some key considerations:</p>
+<ol>
+<li><strong>Type of site</strong>  </li>
+<li>Untreated wastewater - this includes waste from buildings (toilets, sinks, etc), environmental sources (rainwater), and industrial waste. Samples can be collected from the wastewater treatment plant influent, or upstream in the network based on the question of interest. Untreated wastewater sampling is ideal when wastewater treatment plants apply disinfectant before sludge can be sampled, sludge testing demonstrates high assay inhibition or poor virus recovery, or solids residence time within the primary clarifier is unknown (<a href="https://www.cdc.gov/nwss/sampling.html#anchor_1602855388731">CDC, 2024</a>)  </li>
+<li>
+<p>Primary sludge - this includes the suspended solids from the sedimentation process during the first phase of wastewater treatment. Virus concentrations tend to be higher in primary sludge, so this is often the recommended sample type when the case burden in the target population is low (<a href="https://www.cdc.gov/nwss/sampling.html#anchor_1602855388731">CDC, 2024</a>)</p>
+</li>
+<li>
+<p><strong>Representativeness of site</strong></p>
+</li>
+</ol>
+<p>When determining which site is most appropriate, the target population within the selected location should be the primary consideration. For example, with a target population of an entire neighborhood, if sampling untreated wastewater, influent would be most appropriate as it would capture all waste coming into the plant. It is also possible to calculate the number of individuals represented by a particular wastewater treatment plant to assist with evaluating representativeness of a population (<a href="https://repository.tudelft.nl/record/uuid:99b638a5-c0ff-4dd9-aa9b-2752cc6cc88d">Stikkers, 2022</a>). However, there are also wastewater surveillance programs with a more targeted population, such as travelers during the height of the Covid-19 pandemic. For example, the CDC Ginkgo Bioworks monitoring program sampled aircraft wastewater following international flights across the Atlantic in 2022 (<a href="https://www.cdc.gov/mmwr/volumes/72/wr/mm7208a3.htm?fbclid=IwAR1eldb9op1eu9rDkK8JsVKaskkkooBwDiKUw0qff5VqVMvZxH5mBpMO2eM">Morfino et al, 2023</a>). In many contexts where wastewater transport networks are not available, it may be necessary to leverage information about local environmental flows and surface waters to identify good sampling sites (e.g., <a href="https://www.sciencedirect.com/science/article/pii/S2666524723000101?via%3Dihub">McQuade &amp; Blake et al. 2023</a>). The use of tools including <a href="https://es.world/">es.world</a> allow for local topography, bodies of water, and population density to be used to ensure sampling sites are broadly representative. </p>
+<ol>
+<li>
+<p><strong>Uniformity across sites</strong></p>
+<p>When collecting wastewater samples from multiple sites, it is important to ensure uniformity in sample type to enable direct comparison. For example, virus concentrations between untreated wastewater and primary sludge cannot be directly compared as primarily sludge will inherently have higher concentrations. Additionally, different wastewater treatment facilities might use different methods during or following the sedimentation process that involve chemicals capable of interfering with laboratory methods. </p>
+</li>
+<li>
+<p><strong>Pathogen-specific considerations</strong></p>
+</li>
+</ol>
+<p>The ideal sampling site may differ depending on the pathogen of interest. For pathogens where the expected concentration in stool is low, such as influenza (need ref), primary sludge might be most appropriate. Similarly, for instances where the case burden is low, such as influenza during non-influenza season, or emerging strains that aren't widespread in the population yet, primary sludge might also be most appropriate. There are also pathogens that are shed in urine, such as Arboviruses, where untreated wastewater would be a preferred sampling site as it would also include liquid waste (<a href="https://www.sciencedirect.com/science/article/abs/pii/S004313542200851X">Lee et al, 2022</a>).</p>
+<p>An additional pathogen-specific consideration revolves around the need to apply mitigation efforts following detection. For pathogens with widespread community transmission, such as SARS-CoV-2, this is less relevant. However, for pathogens like Polio, identifying where infected individuals reside is critically important to public health.</p>
+<p><strong>Sampling Frequency</strong><br />
+Frequency of sampling has two core components, the number of samples collected and how often samples are collected, both of which will depend on the purpose of the wastewater surveillance program.</p>
+<ol>
+<li><strong>Point-prevalence vs longitudinal prevalence</strong><br />
+   The frequency of sampling is entirely dependent on the goals of the surveillance program and resource availability. In order to monitor trends over time, samples should be collected incrementally from the same sites throughout the study period, and more frequent sampling will result in more granular trend levels. In contrast, if establishing point prevalence is the primary purpose, samples only need to be collected once. However, the conclusions that can be drawn from point prevalence studies are often limited without additional context, or a “baseline” from which to determine whether the prevalence at any given time is expected.  </li>
+</ol>
+<p>Monitoring trends over time, and therefore sampling routinely, is helpful for determining the amount of a particular pathogen circulating in the community, as well as certain genotypes of that pathogen. This is commonly applied to seasonal pathogens, such as SARS-CoV-2, Influenza, and RSV. It can also be helpful for evaluating the impact intervention measures on community transmission of a given pathogen. Point prevalence studies, or those simply detecting the presence or absence of certain pathogens or genes, may include studies attempting to characterize the resistome of wastewater samples (<a href="https://www.sciencedirect.com/science/article/pii/S0269749119363195">Huijbers et al, 2020</a>;<a href="https://journals.asm.org/doi/full/10.1128/spectrum.04102-22">Talat et al, 2023</a>). They can also be used to assess the efficacy of mitigation or distinfection efforts, including studies measuring abundance of pathogens or genes during different stages of the wastewater treatment process (<a href="https://link.springer.com/article/10.1186/s40168-019-0663-0">Che et al, 2019</a>; <a href="https://www.sciencedirect.com/science/article/abs/pii/S026974912100316X">Rodriguez et al, 2021</a>).  </p>
+<ol>
+<li><strong>Sample sizes and frequency of collection</strong><br />
+   Similar to surveillance strategies using clinical specimens, larger sample sizes and more frequent sample collection can result in the identification of trends with higher levels of confidence. However, the relevance of sample size and frequency of sampling will ultimately depend on the purpose of the wastewater surveillance program.   </li>
+</ol>
+<p>For point-prevalence studies, frequency of sampling may not be relevant, but a larger sample size may provide a more narrow margin of error around the prevalence estimate and improve the overall robustness of conclusions. Similarly, larger sample sizes can reduce potential biases that are often introduced from data containing only a few samples, such as chance findings, and can broaden the impact of conclusions. This issue often arises in studies or public health programs designed to characterize the microbial community or “resistome” from wastewater samples. When a particular species or gene is detected in a single sample at a single point in time, it can be challenging to have confidence in those findings and apply them in a public health context.</p>
+<p>When evaluating trends over time, both sample size and frequency of sampling play a role in the ability to measure how the prevalence of a particular pathogen, gene, or variant is changing. Many national wastewater surveillance programs for respiratory viruses involve the collection of multiple samples from multiple sites every week, the results of which are aggregated into a single analysis to maximize public health impact. Importantly, if one of the aims of the wastewater surveillance program is to serve as an “early warning” system for increased community transmission, frequent sampling is essential. </p>
+<ol>
+<li>
+<p><strong>Pathogen-specific considerations</strong></p>
+<p>When the pathogen, gene, or variant of interest is rare in the target population, larger sample sizes and frequent sampling are necessary and will increase the likelihood of detection. For slow growing organisms, and those with a lower basic reproductive number, there is likely to be a delay between the onset of disease in a population and detection in wastewater. More frequent sampling will allow for greater time resolution to determine when a pathogen of interest may have been introduced into a community.</p>
+</li>
+</ol>
+<p><strong>Sample Collection Methods</strong><br />
+There are many well-established methods for collecting wastewater samples, but the optimal method will be largely dependent on the purpose of the wastewater surveillance program as well as time and resource availability.  </p>
+<ol>
+<li><strong>Active vs passive</strong>  </li>
+<li>
+<p>Active sampling is the manual process of a scientist collecting samples at the sampling site. While often cost-effective for point-prevalence studies and short-term wastewater surveillance studies, they can become time and resource-intensive for studies and programs that are longer in duration. Active sampling can involve the collection of grab or composite samples.  </p>
+</li>
+<li>
+<p>Passive sampling has become a fundamental approach to sample collection for wastewater surveillance programs that aim to monitor long-term trends, as it does not require scientists to be present. This involves a passive sampler device, of which there are several designs, that collects samples over a period of time (<a href="https://pubs.acs.org/doi/10.1021/acs.est.1c01530">Schang et al, 2021</a>). In addition to saving time, this also reduces potential bias that might be introduced from manual sampling efforts.   </p>
+</li>
+<li>
+<p><strong>Grab vs composite</strong>  </p>
+</li>
+<li>
+<p>Grab samples are collected at a single point in time. This sampling method is quick and does not require automated equipment, so this method may be advantageous for surveillance programs that require a quick turnaround time from sampling to dissemination of results. However, daily fluctuations in the flow of wastewater at the sampling site might vary and impact the ability to draw conclusions about trends over time. Also, if the disease burden in the target population may impact the utility of this sampling method, as it would be more difficult to detect lower concentrations of the pathogen or gene target in a grab sample that does not represent the entirety of the microbial population in wastewater.  </p>
+</li>
+<li>
+<p>Composite samples are pools of multiple grab samples collected at a specific frequency over a specific time period. This method often results in a more comprehensive sample that is representative of the entire target population, however, it is often more resource-intensive than grab sampling. Previous studies have found strong correlations in SARS-CoV-2 wastewater concentrations between grab and composite samples, but the representativeness of composite samples might be a preferred approach for monitoring trends over a long time period.</p>
+</li>
+</ol>
+<p><strong>Sequencing</strong></p>
+<p>Sequencing of wastewater samples has been transformative for SARS-CoV-2 surveillance worldwide, but ultimately the decision to sequence and the most appropriate approach will depend on the target pathogen, purpose of the wastewater surveillance program, and resource availability. </p>
+<ol>
+<li><strong>Determining whether to sequence</strong>  </li>
+</ol>
+<p>Wastewater sequencing is particularly valuable for surveillance programs that aim to measure the abundance of certain genotypes of a pathogen with high levels of community transmission. Wastewater sequencing is frequently applied to SARS-CoV-2, whereby the abundance of Pango lineages in wastewater samples can be readily determined and serve as an indicator of what is circulating in the population of interest. Similarly, wastewater sequencing for SARS-CoV-2 can provide an early indication of when, where, and how quickly a particular lineage is emerging. SARS-CoV-2 wastewater sequencing can also be used to evaluate whether the lineages circulating in the community are the same as those in clinical cases. Those results can be used to determine whether WGS-based surveillance is actually capturing the intended population, and inform insights into potential clinical severity associated with particular lineages. <br />
+For pathogens with low mutation rates, wastewater sequencing may not provide the same value as most of the sequence data would look the same. Similarly, for pathogens that do not have epidemiologically or clinically relevant genotypes, sequencing might not yield actionable information. It should also be noted that wastewater sequencing is more expensive than enumeration, and requires additional time, labor, and compute resources to maximize utility of the data. However, for many wastewater surveillance programs, the value added by sequencing far outweighs the cost to generate those data. </p>
+<ol>
+<li>
+<p><strong>Sequencing approaches</strong>  </p>
+</li>
+<li>
+<p><strong>Metagenomics</strong> - metagenomic sequencing can be used to characterize the microbial community in wastewater.  A traditional shotgun metagenomics approach can be used for taxonomic profiling of the entire microbial community, or a targeted metagenomics approach can be used for selective sequencing of a particular pathogen or gene.   </p>
+</li>
+<li><strong>Amplicon-based</strong> - amplicon sequencing targets specific regions of the genome of a particular pathogen. “Amplicons” refer to those regions of the genome that are amplified by the primers. This is a very common approach to wastewater sequencing of SARS-CoV-2.  </li>
+<li><strong>Hybrid capture</strong> - a hybrid capture approach uses probes to capture specific genomic regions for sequencing. This is often applied to groups of microbes, such as respiratory pathogens, or the human virome (<a href="https://pubs.acs.org/doi/full/10.1021/acs.est.4c02638">Kantor et al, 2024</a>). </li>
+</ol>
+<p><strong>Integration with ongoing surveillance efforts</strong></p>
+<p>Integration of wastewater surveillance with concurrent epidemiologic and genomic surveillance efforts provides crucial context to the pathogen, gene, or variant of interest. The importance of this integration is very apparent with SARS-CoV-2, where viral concentration in wastewater is an indicator of community transmission levels. However, when combined with traditional epidemiologic data such as hospitalizations, emergency department visits, and COVID-19 mortality rate, this can provide insight into the clinical severity and associated public health impacts. Similarly, wastewater sequencing of SARS-CoV-2 can provide essential information on which particular variants are circulating in the community. When combined with sequencing of clinical specimens, it can illuminate potential differences in variant prevalence between SARS-CoV-2 circulating in the community, often through asymptomatic transmission, and SARS-CoV-2 that results in clinical cases. Similar approaches have been applied to other respiratory viruses such as influenza and RSV. </p>
+<p>Combining wastewater surveillance data with other surveillance programs can also help identify hotspots for a particular pathogen, and detect ongoing transmission in locations where clinical cases have not been identified. This was seen during the worldwide Mpox outbreak in 2022, whereby wastewater monitoring assisted epidemiologists in estimating the case burden of Mpox. Solely relying on clinical reporting resulted in underestimations of case counts due to reluctance to seek treatment by infected individuals, and over-estimations of disease severity by only counting those ill enough to seek treatment. </p>
+<h3 id="available-resources-for-designing-a-wastewater-surveillance-strategy">Available resources for designing a wastewater surveillance strategy:<a class="headerlink" href="#available-resources-for-designing-a-wastewater-surveillance-strategy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>CDC - Developing a Wastewater Surveillance Sampling Strategy <a href="https://www.cdc.gov/nwss/sampling.html">https://www.cdc.gov/nwss/sampling.html</a>  </li>
+<li>APHL - SC2 WW surveillance guide <a href="https://www.aphl.org/aboutAPHL/publications/Documents/EH-2022-SARSCoV2-Wastewater-Surveillance-Testing-Guide.pdf">https://www.aphl.org/aboutAPHL/publications/Documents/EH-2022-SARSCoV2-Wastewater-Surveillance-Testing-Guide.pdf</a>  </li>
+<li>National Academy of Sciences - setting up a national surveillance system <a href="https://www.ncbi.nlm.nih.gov/books/NBK591717/">https://www.ncbi.nlm.nih.gov/books/NBK591717/</a>  </li>
+<li>The international cookbook for wastewater practitioners <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC138489">https://publications.jrc.ec.europa.eu/repository/handle/JRC138489</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "search.highlight", "search.suggest", "toc.integrate"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
