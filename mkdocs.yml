@@ -1,14 +1,15 @@
-
+site_url: https://pha4ge.github.io/wastewater-guidance/
 site_name: "PHA4GE Wastewater Surveillance Guidance"
 site_description: "Open-access methods, case studies, and best practices for wastewater and environmental surveillance"
 site_author: "PHA4GE Wastewater Surveillance Working Group"
 repo_url: https://github.com/pha4ge/wastewater-guidance
-docs_dir: guidance_docs/
-edit_uri: edit/main/
+docs_dir: guidance_docs
+edit_uri: edit/main/guidance_docs/
+use_directory_urls: false
 
 theme:
   name: material
-  logo: ../phage-logo-thin.png
+  logo: ../phage-logo-thin.png 
   palette:
     - scheme: default
       primary: indigo
@@ -40,7 +41,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 
 nav:
-  - Home: README.md
+  - Home: ../README.md
   - Guidance:
       - Surveillance Strategies: SurveillanceStrategies-GuidanceDoc.md
       - Data Analysis: DataAnalysis-GuidanceDoc.md
@@ -51,4 +52,3 @@ nav:
       - Blantyre Typhoid: CaseStudy2-GuidanceDoc.md
       - Spain Mpox: CaseStudy3-GuidanceDoc.md
       - Bengaluru Multi-pathogen: CaseStudy4-GuidanceDoc.md
-  # - Contributing: contributing.md
