@@ -1,5 +1,5 @@
 
-**Case Study \#2 \- “[Environmental surveillance for *Salmonella* Typhi in rivers and wastewater from an informal sewage network in Blantyre, Malaw](https://doi.org/10.1371/journal.pntd.0012518)i”**
+**Case Study \#2 \- “[Environmental surveillance for *Salmonella* Typhi in rivers and wastewater from an informal sewage network in Blantyre, Malawi](https://doi.org/10.1371/journal.pntd.0012518)”**
 
 The aim of the study was to assess the feasibility of utilising ES in an urban environment drained by a natural river system and investigate whether this approach might be a useful tool for confirming the presence and sustained transmission of *S*. Typhi within the local population.
 
