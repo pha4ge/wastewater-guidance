@@ -20,7 +20,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs-material "pymdown-extensions>10.5"
+        run: pip install mkdocs-material pymdown-extensions "mkdocs-replace-md-exts-plugin>=0.1.7"
 
       - name: Copy logo into site
         run: |

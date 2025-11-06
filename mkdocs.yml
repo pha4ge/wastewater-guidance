@@ -41,9 +41,11 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.magiclink
-  - pymdownx.pathconverter:
-      base_path: guidance_docs
-      relative: true
+
+plugins:
+  - search
+  - replace-md-exts:
+      replacement: .html
 
 nav:
   - Home: index.md
