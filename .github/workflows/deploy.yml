@@ -13,25 +13,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Check out your repository
       - uses: actions/checkout@v4
 
-      # 2️⃣ Set up Python
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # 3️⃣ Install MkDocs and extensions
       - name: Install dependencies
         run: pip install mkdocs-material pymdown-extensions
 
-      # 4️⃣ Copy logo into the build folder (so MkDocs can find it)
       - name: Copy logo into site
         run: |
           mkdir -p guidance_docs/images
           cp phage-logo-thin.png guidance_docs/images/ || true
 
-      # 5️⃣ Build and deploy to gh-pages
+      - name: Copy README to site index
+        run: cp README.md guidance_docs/index.md
+
+
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
         env:
