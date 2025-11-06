@@ -20,8 +20,14 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: pip install mkdocs-material pymdown-extensions "mkdocs-replace-md-exts-plugin>=0.1.7"
+        run: pip install mkdocs-material pymdown-extensions
 
+      # rewrite .md → .html inside the container only
+      - name: Rewrite internal Markdown links for build
+        run: |
+          find guidance_docs -type f -name "*.md" \
+            -exec sed -i 's/\.md)/.html)/g' {} +
+        
       - name: Copy logo into site
         run: |
           mkdir -p guidance_docs/images
