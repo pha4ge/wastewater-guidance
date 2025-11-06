@@ -22,13 +22,6 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material pymdown-extensions
 
-      - name: Rewrite internal Markdown links for MkDocs build
-        run: |
-          echo "Rewriting internal Markdown links (.md → .html)..."
-          cd guidance_docs
-          grep -rl '\.md)' . | xargs sed -i 's/\.md)/.html)/g' || true
-          echo "Rewrite complete."
-        
       - name: Copy logo into site
         run: |
           mkdir -p guidance_docs/images
@@ -37,6 +30,12 @@ jobs:
       - name: Copy README to site index
         run: cp README.md guidance_docs/index.md
 
+      - name: Rewrite internal Markdown links for MkDocs build
+        run: |
+          echo "Rewriting internal Markdown links (.md → .html)..."
+          cd guidance_docs
+          grep -rl '\.md)' . | xargs sed -i 's/\.md)/.html)/g' || true
+          echo "Rewrite complete."
 
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
