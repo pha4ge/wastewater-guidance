@@ -10,6 +10,7 @@ use_directory_urls: false
 theme:
   name: material
   logo: images/phage-logo-thin.png 
+  home_url: /
   palette:
     - scheme: default
       primary: indigo

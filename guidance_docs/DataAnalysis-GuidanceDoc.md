@@ -1,4 +1,3 @@
-![PHA4GE logo](../phage-logo-thin.png)
 ## **Guidance Document \- Wastewater Surveillance Data Analysis**
 
 Working with wastewater pathogen concentration measurement and sequencing data can be challenging, but community resources are available for researchers with all levels of bioinformatics and data analysis experience. The following guidance document is primarily geared towards targeted (often capture probe or amplicon-based) sequencing of pathogens in wastewater, though we provide guidance for metagenomic analyses as well. 
