@@ -1,4 +1,3 @@
-![PHA4GE logo](../phage-logo-thin.png)
 ## **Guidance Document \- Wastewater Data Sharing**
 
 Much like for clinical pathogen surveillance, sharing of wastewater quantification and genomic data is essential to enable timely and transparent public health responses, as well as more equitable access to health-related information across the globe. Sharing of pathogen data, in particular, requires careful accounting for the complex incentives and pressures, from academic to geopolitical, such that data is re-used only in line with submitter permissions. 

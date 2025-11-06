@@ -1,4 +1,3 @@
-![PHA4GE logo](../phage-logo-thin.png)
 ## **Guidance Document \- Surveillance Strategies**
 
 The ideal strategy for a wastewater surveillance program will depend on the purpose of the program and resource availability. Common use-cases for wastewater surveillance programs in public health include monitoring trends in prevalence of a pathogen over time to estimate the disease burden in a community, identifying rare pathogens to direct mitigation efforts, and establishing “early warning” systems for pathogens of public health concern. Some surveillance strategies may be specific to a certain pathogen, variant, or gene of interest, while others may be pathogen-agnostic or broadly applicable for many purposes. Surveillance strategies can also be modified depending on the availability of resources to carry out the intended purpose, which can be seen in the different approaches to wastewater surveillance programs worldwide.

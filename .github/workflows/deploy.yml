@@ -22,11 +22,12 @@ jobs:
       - name: Install dependencies
         run: pip install mkdocs-material pymdown-extensions
 
-      # rewrite .md → .html inside the container only
-      - name: Rewrite internal Markdown links for build
+      - name: Rewrite internal Markdown links for MkDocs build
         run: |
-          find guidance_docs -type f -name "*.md" \
-            -exec sed -i 's/\.md)/.html)/g' {} +
+          echo "Rewriting internal Markdown links (.md → .html)..."
+          cd guidance_docs
+          grep -rl '\.md)' . | xargs sed -i 's/\.md)/.html)/g' || true
+          echo "Rewrite complete."
         
       - name: Copy logo into site
         run: |
