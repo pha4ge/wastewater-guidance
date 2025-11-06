@@ -32,10 +32,13 @@ jobs:
 
       - name: Rewrite internal Markdown links for MkDocs build
         run: |
-          echo "Rewriting internal Markdown links (.md → .html)..."
+          echo "Fixing Markdown links (.md → .html and removing guidance_docs/)..."
           cd guidance_docs
+          # Replace .md) with .html)
           grep -rl '\.md)' . | xargs sed -i 's/\.md)/.html)/g' || true
-          echo "Rewrite complete."
+          # Remove guidance_docs/ from links
+          grep -rl 'guidance_docs/' . | xargs sed -i 's#guidance_docs/##g' || true
+          echo "Link rewrite complete."
 
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
