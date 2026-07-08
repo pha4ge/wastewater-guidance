@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 **Case Study \#4 \- [Respiratory virus infection dynamics and genomic surveillance to detect seasonal influenza subtypes in wastewater: a longitudinal study in Bengaluru, India](https://www.medrxiv.org/content/10.1101/2025.01.13.25320458v1)**
 
 The aim of the study was to track the prevalence and evolution of common respiratory viruses \[SARS Cov-2, Influenza and Respiratory Syncytial virus (RSV)\]  in longitudinal wastewater surveillance in Bengaluru, India, using both qPCR-based quantification and a combination of amplicon and metagenomic sequencing. 

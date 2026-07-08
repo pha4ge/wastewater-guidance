@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 **Case Study \#3 \- “[Spanish wastewater reveals the current spread of Monkeypox virus](https://www.sciencedirect.com/science/article/pii/S0043135423000568)”**
 
 The aim of the study was to trace the community circulation of the MPXV from potentially symptomatic, asymptomatic, or presymptomatic individuals using the previous established Spanish National SARS-CoV-2 Wastewater Surveillance Network (VATar COVID-19).
