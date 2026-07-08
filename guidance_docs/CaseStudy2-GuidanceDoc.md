@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 
 **Case Study \#2 \- “[Environmental surveillance for *Salmonella* Typhi in rivers and wastewater from an informal sewage network in Blantyre, Malawi](https://doi.org/10.1371/journal.pntd.0012518)”**
 
