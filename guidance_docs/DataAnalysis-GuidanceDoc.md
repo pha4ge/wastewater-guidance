@@ -37,10 +37,6 @@ Nf-core ([https://nf-co.re/](https://nf-co.re/))  is a collection of community m
 3. [nf-core/funcscan](https://nf-co.re/funcscan/1.1.6/)  is a bioinformatics analysis pipeline which currently features mining for antimicrobial peptides, antibiotic resistance genes and biosynthetic gene clusters. It performs the screening of contigs for antibiotic resistant gene-like sequences with ABRicate, AMRFinderPlus, fARGene, RGI, DeepARG.  
 4. [nf-core/taxprofiler](https://github.com/nf-core/taxprofiler) is a bioinformatics best-practice analysis pipeline for taxonomic classification and profiling of shotgun short- and long-read metagenomic data. It allows for in-parallel taxonomic identification of reads or taxonomic abundance estimation with multiple classification and profiling tools against multiple databases, and produces standardised output tables for facilitating results comparison between different tools and databases.  
 
-**Reference-based viral metagenomics pipelines**
-
-[EsViritu](https://esviritu.readthedocs.io/) is a reference-based viral metagenomics pipeline designed for the sensitive detection, quantification, and characterization of known viruses from sequencing data (Short and Long read platforms). The workflow optionally performs quality filtering, adapter trimming, and removal of host and PhiX reads before aligning sequences to a curated, dereplicated viral reference database using minimap2 (default thresholds: >=80% average nucleotide identity, >=100 nt aligned, and >=90% read coverage). The current EsViritu database (v3.2.4) contains approximately 20,000 high-quality viral genome assemblies spanning 63 taxonomic families. Candidate reference genomes are subsequently dereplicated and reads are re-aligned to representative references for final quantification. EsViritu reports genome breadth and depth of coverage, RPKMF abundance estimates, average read identity, nucleotide diversity (Pi), taxonomic profiles, consensus genome sequences, and interactive coverage visualizations.
-
 For more information on the specific tools being used within these pipelines, we recommend you check out the **Gold-Standard Methods for Wastewater Genomic Surveillance** section. 
 
 **Resources for non-bioinformaticians (Scenario 2\)**  
@@ -91,7 +87,7 @@ Physical linkage of mutations can be used to detect novel or rare haplotypes. Tw
 3. [Crykey](https://www.nature.com/articles/s41467-024-48334-w) screens for rare linked mutations using a static database of observed SARS-CoV-2 genomes, allowing for detection of previously unobserved genomic variation[(Liu et al. 2024\)](https://doi.org/10.1038/s41467-024-48334-w).  
    
 
-**Metagenomic Sequencing Methods**  
+**Metagenomic Classification and Detection Methods**  
 Although metagenomic sequencing of wastewater has great potential for unbiased surveillance of diverse pathogens, wet-lab pathogen concentration protocols are not yet capable in general of obtaining significant read depth and coverage for many pathogens. In many cases, the vast majority of reads are associated with host and enteric bacterial reads, which are of minimal use for pathogen surveillance. However, some recent studies using virome hybridization capture panels have suggested that this sort of metagenomic surveillance may be possible. When working with this data, or other metagenomic wastewater sequencing data, we recommend the following tools: 
 
 * Kraken: Kraken is a widely used k-mer based match taxonomic classification tool that is used to classify reads to the most specific possible taxonomic label (genus,species, etc.), using the lowest common ancestor (LCA). [(Wood, Lu, and Langmead 2019\)](https://doi.org/10.1186/s13059-019-1891-0)  
@@ -99,6 +95,10 @@ Although metagenomic sequencing of wastewater has great potential for unbiased s
 * Sourmash: This tool is used for a variety of metagenomic analyses purposes such as identification of the reference genome for read mapping, sequence querying and taxonomic classification of reads.  
 * Targeting of specific genes of interest  
   * AMR markers: There is a continuous effort to develop methods for detection of antibiotic resistance through wastewater sequencing. For example, Mycobacterium tuberculosis(MTB) drug resistance markers that have been [catalogued by the World](https://www.who.int/publications/i/item/9789240082410) Health Organization and are most commonly detected using [tb-profiler](https://github.com/jodyphelan/TBProfiler). 
+
+**Combined virus metagenomic classification and consensus sequence calling**
+
+[EsViritu](https://esviritu.readthedocs.io/) is a reference-based viral metagenomics pipeline designed for the sensitive detection, quantification, and characterization of known viruses from sequencing data (Short and Long read platforms). The workflow optionally performs quality filtering, adapter trimming, and removal of host and PhiX reads before aligning sequences to a curated, dereplicated viral reference database using minimap2 (default thresholds: >=80% average nucleotide identity, >=100 nt aligned, and >=90% read coverage). The current EsViritu database (v3.2.4) contains approximately 20,000 high-quality viral genome assemblies spanning 63 taxonomic families. Candidate reference genomes are subsequently dereplicated and reads are re-aligned to representative references for final quantification. EsViritu reports genome breadth and depth of coverage, RPKMF abundance estimates, average read identity, nucleotide diversity (Pi), taxonomic profiles, consensus genome sequences, and interactive coverage visualizations.
 
 **Guidelines for researchers developing new tools (Scenario 4\)**  
 Wastewater-based genomic pathogen surveillance, much like clinical genomic surveillance, relies on transparent accounting of the specific information (e.g., metadata, methods, libraries) used while performing an analysis. Enabling consistent and interpretable outcomes for bioinformatics analyses requires the use of standardized resources for sample analyses.   
