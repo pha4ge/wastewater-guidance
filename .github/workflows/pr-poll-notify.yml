@@ -1,49 +1,83 @@
-on:
-   pull_request_target:
-     types: [opened, ready_for_review]
-+  # Lets you manually post the poll on any PR that's already open - useful
-+  # for PRs that existed before this workflow was added, or to re-prompt
-+  # for feedback later. Run it from the repo's Actions tab: Actions ->
-+  # PR Poll Notification -> Run workflow -> enter the PR number.
-+  workflow_dispatch:
-+    inputs:
-+      pr_number:
-+        description: "PR number to post the poll on"
-+        required: true
-+        type: number
- 
- jobs:
-   launch-poll:
-@@ steps: @@
-         uses: actions/github-script@v7
-         with:
-           script: |
-+            const prNumber = context.eventName === 'workflow_dispatch'
-+              ? Number(context.payload.inputs.pr_number)
-+              : context.issue.number;
-+
-             const { data: comment } = await github.rest.issues.createComment({
-               owner: context.repo.owner,
-               repo: context.repo.repo,
--              issue_number: context.issue.number,
-+              issue_number: prNumber,
-               body: [
-                 ...
-             core.setOutput('comment_url', comment.html_url);
+name: PR Poll Notification
 
--      - name: Notify Slack
--        env:
--          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
--        run: |
--          curl -sf -X POST -H 'Content-type: application/json' \
--            --data "{...}" \
--            "$SLACK_WEBHOOK_URL"
-+      # Slack notification skipped for now. To re-enable later: add the
-+      # SLACK_WEBHOOK_URL repository secret, then uncomment this step.
-+      # - name: Notify Slack
-+      #   env:
-+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-+      #   run: |
-+      #     curl -sf -X POST -H 'Content-type: application/json' \
-+      #       --data "{...}" \
-+      #       "$SLACK_WEBHOOK_URL"
+# Fires when a PR is opened or marked ready for review.
+# Add 'synchronize' to the list below if you also want a fresh poll
+# posted every time new commits are pushed to the PR.
+#
+# NOTE: This uses pull_request_target, not pull_request. This repo accepts
+# PRs from forks (per its Contributing guide), and pull_request workflows
+# from forks get a read-only token with NO access to secrets - the Slack
+# webhook and comment/reaction steps below would silently fail. Using
+# pull_request_target instead runs with the base repo's permissions and
+# secrets even for fork PRs. This is safe here specifically because this
+# workflow never checks out or runs any code from the PR - it only reads
+# PR metadata (title/URL/number) and posts a comment. Do not add an
+# actions/checkout step for the PR's head ref to this workflow.
+on:
+  pull_request_target:
+    types: [opened, ready_for_review]
+  # Lets you manually post the poll on any PR that's already open - useful
+  # for PRs that existed before this workflow was added, or to re-prompt
+  # for feedback later. Run it from the repo's Actions tab: Actions ->
+  # PR Poll Notification -> Run workflow -> enter the PR number.
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "PR number to post the poll on"
+        required: true
+        type: number
+
+jobs:
+  launch-poll:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Post poll comment and pre-add reactions
+        id: poll
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.eventName === 'workflow_dispatch'
+              ? Number(context.payload.inputs.pr_number)
+              : context.issue.number;
+
+            const { data: comment } = await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: [
+                '## 📊 Review Poll',
+                '',
+                'React to this comment to vote:',
+                '',
+                '- 👍 Approve — merge as-is',
+                '- 👎 Request changes — leave inline comments with specifics',
+                '- 👀 Need more discussion before deciding',
+                '',
+                '_Please vote as soon as you get a chance. Anyone with a GitHub account can react here — no need to be a formal reviewer._'
+              ].join('\n')
+            });
+
+            // Pre-seed the three reaction options so voters just click, not type
+            for (const content of ['+1', '-1', 'eyes']) {
+              await github.rest.reactions.createForIssueComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: comment.id,
+                content
+              });
+            }
+
+            core.setOutput('comment_url', comment.html_url);
+
+      # Slack notification skipped for now. To re-enable later: add the
+      # SLACK_WEBHOOK_URL repository secret, then uncomment this step.
+      # - name: Notify Slack
+      #   env:
+      #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #   run: |
+      #     curl -sf -X POST -H 'Content-type: application/json' \
+      #       --data "{\"text\": \":bar_chart: *New poll for review:* <${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>\n Vote and leave feedback here: ${{ steps.poll.outputs.comment_url }}\"}" \
+      #       "$SLACK_WEBHOOK_URL"
